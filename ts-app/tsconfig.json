@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "pretty": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "allowJs": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
