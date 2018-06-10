@@ -4,3 +4,7 @@ dist
 **/dist
 .DS_STORE
 **/.DS_STORE
+build
+**/build
+**/*.log
+**/package-lock.json

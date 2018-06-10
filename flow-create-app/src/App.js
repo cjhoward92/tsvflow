@@ -13,16 +13,11 @@ type State = {
 };
 
 class App extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.incrementCounter = this.incrementCounter.bind(this);
-  }
-
   state = {
     counter: 0
   };
   
-  incrementCounter() {
+  incrementCounter: () => {
     this.setState({ counter: this.state.counter + 1 });
   }
 

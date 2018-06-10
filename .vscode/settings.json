@@ -2,5 +2,6 @@
   "flowide.pathToFlow": "flow-app\\node_modules\\.bin\\flow",
   "flowide.enabled": true,
   "flow.pathToFlow": "flow-app\\node_modules\\.bin\\flow",
-  "html.autoClosingTags": false
+  "html.autoClosingTags": false,
+  "files.eol": "\n"
 }
