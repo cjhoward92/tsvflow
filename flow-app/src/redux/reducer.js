@@ -1,4 +1,6 @@
 // @flow
+import type { Reducer } from 'redux';
+
 import {
   INCREMENT,
   DECREMENT,
@@ -12,7 +14,11 @@ export type State = {
   count: number,
 };
 
-const reducer = (state: State, action: Actions): State => {
+export const defaultState: State = {
+  count: 0,
+};
+
+const reducer: Reducer<State, Actions> = (state: State = defaultState, action: Actions): State => {
   switch (action.type) {
     case INCREMENT:
       return { ...state, count: state.count + 1 };
