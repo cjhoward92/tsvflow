@@ -1,7 +1,16 @@
 {
-  "flowide.pathToFlow": "flow-app\\node_modules\\.bin\\flow",
+  "flowide.pathToFlow": "${workspaceFolder}\\flow-app\\node_modules\\.bin\\flow",
   "flowide.enabled": true,
-  "flow.pathToFlow": "flow-app\\node_modules\\.bin\\flow",
+  "flow.pathToFlow": "${workspaceFolder}\\flow-app\\node_modules\\.bin\\flow",
   "html.autoClosingTags": false,
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "javascript.validate.enable": false,
+  "flow.enabled": true,
+  "flow.fileExtensions": [
+    ".js",
+    ".jsx",
+    ".flow"
+  ],
+  "flow.useNPMPackagedFlow": true,
+  "typescript.validate.enable": false
 }

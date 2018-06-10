@@ -3,6 +3,7 @@ module.exports = {
     "parser": "babel-eslint",
     "rules": {
         "no-undef": 0,
-        "jsx-quotes": 0
+        "jsx-quotes": 0,
+        "import/extensions": 0
     }
 };

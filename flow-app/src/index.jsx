@@ -2,12 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-type Props = {
-  name: string,
-};
+import App from './App.jsx';
 
-const App = (props: Props) => (
-  <div>Hello {props.name}!</div>
-);
+const rootElement: HTMLElement | null = document.getElementById('root');
+if (!rootElement) {
+  throw new Error('What?');
+}
 
-ReactDOM.render(<App name='Carson' />, document.getElementById('root'));
+ReactDOM.render(<App name='Carson' />, rootElement);
