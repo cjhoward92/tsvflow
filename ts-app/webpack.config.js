@@ -9,8 +9,11 @@ const plugins = [
 ];
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.tsx',
   devtool: 'source-map',
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -18,9 +21,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$|\.jsx$/,
+        test: /\.ts?$|\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: { loader: 'babel-loader' },
       },
     ],
   },

@@ -15,7 +15,13 @@ See the `flow-app` and `ts-app` folders for the example projects
 
 ## Cons of TypeScript
 
- - Require `.ts` extension (Maybe a pro?)
- - Requires a config //TODO ?? double check this
+ - Require `.ts` extension (prolly a pro)
+ - Requires a config
  - Can't handle compose functions
  - Does not have strict object types
+
+## Link to slides
+
+https://docs.google.com/presentation/d/1AIHHNO8GfeHFd9EQP4cc3oCT3QqkVrLQTiHA9IytPF8/edit?usp=sharing
+
+https://tinyurl.com/y7owz6az

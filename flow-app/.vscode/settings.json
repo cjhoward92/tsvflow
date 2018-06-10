@@ -12,5 +12,5 @@
     ".flow"
   ],
   "flow.useNPMPackagedFlow": true,
-  "typescript.validate.enable": true
+  "typescript.validate.enable": false
 }
