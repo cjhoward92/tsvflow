@@ -32,8 +32,10 @@ declare module "react-redux" {
   Com = React Component
   */
 
+  // I had to add this because... why not?
   declare export type MapStateToProps<S: Object, SP: Object, RSP: Object> = (state: S, props: SP) => RSP;
 
+  // I had to add this too because... why not?
   declare export type MapDispatchToProps<A, OP: Object, RDP: Object> = (dispatch: Dispatch<A>, ownProps: OP) => RDP;
 
   declare export type MergeProps<SP: Object, DP: Object, MP: Object, RMP: Object> = (

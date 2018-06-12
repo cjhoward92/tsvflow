@@ -29,10 +29,9 @@
     "redux": "^4.0.0"
   },
   "scripts": {
-    "build": "webpack --mode production",
     "flow": "flow",
     "lint": "eslint src",
-    "build-dev": "webpack --mode development",
+    "build": "webpack --mode development",
     "watch": "webpack-dev-server --mode development --hot --open"
   }
 }
