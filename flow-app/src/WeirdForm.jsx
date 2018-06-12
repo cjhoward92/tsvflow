@@ -71,7 +71,7 @@ class WeirdForm extends React.Component<Props, State> {
       name,
       occupation,
       daysOff,
-    } = this.state;
+    }: State = this.state;
 
     helper.save(name, occupation, daysOff);
     this.setState({ name: '', occupation: occupations.DEVELOPER, daysOff: 0 });
@@ -82,7 +82,7 @@ class WeirdForm extends React.Component<Props, State> {
       name,
       occupation,
       daysOff,
-    } = this.state;
+    }: State = this.state;
 
     return (
       <div>
@@ -134,7 +134,7 @@ class WeirdForm extends React.Component<Props, State> {
           <div>
             <button
               type='submit'
-              onClick={(e) => {
+              onClick={(e: Event) => {
                 e.preventDefault();
                 // Classes are nominally typed in Flow, so only FormHelper works here.
                 this.onSave(new FormHelper());
