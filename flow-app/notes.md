@@ -24,7 +24,7 @@ Windows development is painful...
 
 ### exact types
 
-I wanted to use exact types on my reducer state, but I couldn't do that _and_ apread my state into a new object.
+I wanted to use exact types on my reducer state, but I couldn't do that _and_ spread my state into a new object.
 
 ### Weird errors when trying to run flow
 
@@ -51,6 +51,8 @@ There were a few times when writing this where I could just not get flow to type
 Flow has polymorphic generic types with the `<*>` syntac (e.g. `Dispatch<*>`) that allows you to basically infer the type assuming the structure of the real type being used matches that of the required signatures...
 
 For instance, redux actions. They are many, and very different from action to action. Polymorphic types allow Flow to type dispatches without you needing to do a bunch of work. Which is kind of nice. I just don't know how well it actually works. It also doesn't allow the developer to infer much, as it is effectively a wildcard.
+
+Also bounded polymorphism which is nice.
 
 ### No transpiler (sort of) so no free features
 
