@@ -9,6 +9,8 @@ import { increment, decrement } from './redux/actions';
 
 import type { State } from './redux/reducer';
 
+import WeirdForm from './WeirdForm.jsx';
+
 type StateProps = {|
   count: number,
 |};
@@ -32,6 +34,7 @@ const App = (props: Props) => (
       <button onClick={props.onIncrement} type='button'>Increment</button>
       <button onClick={props.onDecrement} type='button'>Decrement</button>
     </div>
+    <WeirdForm initialName={props.name} />
   </div>
 );
 

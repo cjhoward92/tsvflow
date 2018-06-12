@@ -32,7 +32,7 @@
     "build": "webpack --mode production",
     "flow": "flow",
     "lint": "eslint src",
-    "start": "webpack --mode development",
+    "build-dev": "webpack --mode development",
     "watch": "webpack-dev-server --mode development --hot --open"
   }
 }
