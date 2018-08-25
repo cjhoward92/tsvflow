@@ -5,6 +5,7 @@
 [include]
 
 [libs]
+<PROJECT_ROOT>/src/modules/globals.js.flow
 
 [options]
 suppress_type=$FlowTODO
